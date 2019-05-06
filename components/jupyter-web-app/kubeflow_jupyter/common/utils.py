@@ -140,6 +140,7 @@ def set_notebook_podpresets_labels(nb,podprestLabels):
   logger.warning("number of labels to be added: %d" % len(podprestLabels))
   nb["metadata"]["labels"].update(podprestLabels)
 
+
 def enable_shm(nb):
   notebook_spec = nb["spec"]['template']['spec']
   notebook_cont = nb["spec"]['template']['spec']['containers'][0]
